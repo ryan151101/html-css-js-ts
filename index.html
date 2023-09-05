@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sheng Ang's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sheng Ang</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#recentwork">Recent Works</a></li>
+          <li><a href="#contact">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Thong Sheng</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">About</a></li>
+          <li><a href="#service" onclick="toggleMenu()">Services</a></li>
+          <li><a href="#recentwork" onclick="toggleMenu()">Recent Works</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./TS-PIC.jpeg" alt="Thong Sheng Profile Picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sheng Ang</h1>
+        <p class="section__text__p2">Freelance Data Analyst to help you unleash the full potential of your data and inform data-driven business decisions.</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./Sheng_Ang_Resume.pdf')">
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/thongshengang/'">
+          <img src="./github.png" alt="My GitHub Profile" class="icon" onclick="location.href=''">
+        </div>
+      </div>
+      <img 
+        src="./arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#service'"
+      />
+    </section>
+
+    <section id="service">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Services</h1>
+
+      <div class="service-details-containers">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img 
+              src="https://cdn-icons-png.flaticon.com/512/2737/2737066.png" 
+              alt="Cleaning & Transformation" 
+              class="service-img"/>
+            </div>
+            <h2 class="service-sub-title service-title">Cleaning & Transformation</h2>
+            <p>Analyzing unclean data is equivalent to not analyzing any data!</p>
+            <br>
+            <p>I eliminate errors and inconsistencies while structuring your data for seamless analysis utilizing my expertise in Excel, SQL and Power Query.</p>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img 
+              src="https://cdn-icons-png.flaticon.com/512/1570/1570889.png" 
+              alt="Modeling & Analytics" 
+              class="service-img"/>
+            </div>
+            <h2 class="service-sub-title service-title">Modeling & Analytics</h2>
+            <p>Yes, I also provide the fancy stuff like building statistical models and machine learning to identify trends anpatterns to inform your business decision.</p>
+            <br>
+            <p>Leveraging the power  of R and Python alongh with related libraries such as pandas, numpy and scikit-learn.</p>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img 
+              src="https://cdn-icons-png.flaticon.com/512/2472/2472283.png" 
+              alt="Reporting and Visualization" 
+              class="service-img"/>
+            </div>
+            <h2 class="service-sub-title service-title">Reporting and Visualization</h2>
+            <p>Sick of performing ad-hoc analysis everything you need to create a report?</p>
+            <br>
+            <p>I can create automated end-to-end dashboards that refreshes automatically to show you the newest analysis using tools such as Tableau, Power BI and Looker.</p>
+          </div>
+        </div>
+      </div>
+      <img 
+        src="./arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#recentwork'"
+      />
+    </section>
+
+    <section id="recentwork">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Recent Works</h1>
+      <div class="experience-details-container">
+        <div class="about-containers cont-grid">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img 
+              src="./w1.1.png" 
+              alt="Image of Employee Professional Development Plan"
+              class="works-img"
+            />
+            <h2 class="experience-sub-title project-title">Employee Professional Development Plan - Looker Studio</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('./w1-doc.pdf')">
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img 
+              src="./w2.1.jpg" 
+              alt="Image of Health Program Effectiveness"
+              class="works-img"
+            />
+            <h2 class="experience-sub-title project-title">Health Program Effectiveness - Power BI</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('./w2-doc.pdf')">
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img 
+              src="./w3.1.jpg" 
+              alt="Image of Mental Health"
+              class="works-img"
+            />
+            <h2 class="experience-sub-title project-title">Mental Health Progress - Power BI</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('./w3-doc.pdf')">
+                Explore
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img 
+              src="./w4.1.jpg" 
+              alt="Image of Customer Engagement"
+              class="works-img"
+            />
+            <h2 class="experience-sub-title project-title">Customer Engagement - Power BI</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="window.open('./w4-doc.pdf')">
+                Explore
+              </button>
+            </div>
+          </div>
+        </div></div>
+      </div>
+      <img 
+        src="./arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Contacts'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <p class="section__text__p3">Feel free to reach out for any scale of data project. Learn more about my data experience through the media below:</p>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img 
+            src="./email.png" 
+            alt="Email icon" 
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:thongsheng99@gmail.com">thongsheng99@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img 
+            src="./linkedin.png"
+            alt="LinkedIn icon" 
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/thongshengang/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#profile">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#recentwork">Recent Work</a></li>
+            <li><a href="#contact">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Sheng Ang. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
